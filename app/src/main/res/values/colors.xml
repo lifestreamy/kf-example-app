@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#09195F</color>
+    <color name="colorPrimaryDark_2">#F3040F3D</color>
+    <color name="colorAccent">#2958CE</color>
+    <color name="blue">#1374df</color>
+    <color name="blue_light">#3386E4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#696868</color>
+    <color name="black">#050505</color>
+    <color name="transparent_gray">#6F302F2F</color>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark2">#303F9F</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="white2">#FFFFFF</color>
+    <color name="colorRipple2">#A9A9F5</color>
+    <color name="mRed">#ffff4444</color>
+    <color name="twoCanOrange">#FE8A30</color>
+    <color name="gray_transparent">#457C7C7C</color>
+    <color name="red">#f54d4f</color>
+    <color name="greenLight">#8BC34A</color>
+    <color name="green">#E803700A</color>
+
+    <color name="background">#F8F9FE</color>
+    <color name="border">#EFEEEE</color>
+    <color name="border_focus">#5479D8</color>
+    <color name="button_pressed">#DDDDDD</color>
+    <color name="text">#091B3F</color>
+    <color name="text_input">#090A0A</color>
+    <color name="light_blue_text">#94ACE6</color>
+    <color name="text50">#A5A5A5</color>
+    <color name="primary">#2958CE</color>
+    <color name="primary_pressed">#1544BA</color>
+    <color name="primary_disabled">#CFD9F4</color>
+    <color name="text_gray">#A5A5A5</color>
+    <color name="light">#E7ECFA</color>
+    <color name="light_light">#EFF3FF</color>
+    <color name="light_light_gray">#F1F1F1</color>
+
+    <color name="pin_input_bg">#e1e1e1</color>
+</resources>

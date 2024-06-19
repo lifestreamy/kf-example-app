@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.glide_version = '4.9.0'
+    ext.timber_version = '5.0.1'
+    ext.kotlin_version = '1.9.22'
+    ext.dokka_version = '1.9.10'
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version "$kotlin_version"
+    id 'org.jetbrains.dokka' version "$dokka_version"
+    id 'com.google.devtools.ksp' version '1.9.22-1.0.16' apply false
+}
+
+ext {
+    app_version = '3.0.18'
+    app_code = 169
+    // Dokka
+    docDir = "${projectDir}/docs"
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+dokkaHtmlMultiModule.configure {
+    moduleName.set("Dokka MultiModule Example")
+    outputDirectory = new File(docDir)
+}

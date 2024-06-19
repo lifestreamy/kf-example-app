@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Покупка"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Номер чека"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="0002211141851562/227330003631"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub" />
+
+    <Button
+        android:id="@+id/action1"
+        android:fontFamily="@font/lato_bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Возврат"
+        android:textColor="@color/primary"
+        android:textAllCaps="false"
+        android:background="@drawable/button_action"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/action2"
+        android:fontFamily="@font/lato_bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Подпись"
+        android:textColor="@color/primary"
+        android:textAllCaps="false"
+        android:background="@drawable/button_action"
+        app:layout_constraintTop_toBottomOf="@id/action1"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/action3"
+        android:fontFamily="@font/lato_bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Печать слип-чека"
+        android:textColor="@color/primary"
+        android:textAllCaps="false"
+        android:background="@drawable/button_action"
+        app:layout_constraintTop_toBottomOf="@id/action2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/action4"
+        android:fontFamily="@font/lato_bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Отправить чек по смс"
+        android:textColor="@color/primary"
+        android:textAllCaps="false"
+        android:background="@drawable/button_action"
+        app:layout_constraintTop_toBottomOf="@id/action3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

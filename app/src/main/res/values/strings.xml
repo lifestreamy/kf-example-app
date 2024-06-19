@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Example App</string>
+    <string name="auth">Авторизация</string>
+    <string name="password">Пароль</string>
+    <string name="hint_password">Ваш пароль</string>
+    <string name="login">Логин</string>
+    <string name="hint_login">Ваш логин</string>
+    <string name="log_in_btn">Войти</string>
+    <string name="show_pass">Показать пароль</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+</resources>

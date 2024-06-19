@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Оплата"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMifareRead"
+        android:text="MiFare"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/primary"
+        android:background="@drawable/button_bg"
+        android:layout_width="76dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/btnMifareCancel"
+        android:text="Отменить"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/primary"
+        android:background="@drawable/button_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rlAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/transparent">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:focusable="false"
+            android:fontFamily="@font/lato"
+            android:gravity="end"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text=""
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="36dp"
+            android:textSize="48sp"
+            app:met_hideUnderline="true"/>
+
+        <TextView
+            android:id="@+id/amountR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="₽"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text"
+            android:layout_alignParentEnd="true"
+            android:textSize="48sp"
+            android:layout_centerVertical="true"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <include android:id="@+id/inputLayout" layout="@layout/layout_input_amount"/>
+
+            <Button
+                android:id="@+id/btnPurchase"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Оплатить"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Отменить"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

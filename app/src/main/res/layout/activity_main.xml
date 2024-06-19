@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.app.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:background="@drawable/splash_backgound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.2"
+        android:text="Эквайринг"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="56dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/items"/>
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:value="1" />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="2" />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            app:value="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="4" />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="5" />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            app:value="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="7" />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="8" />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            app:value="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="." />
+
+        <com.example.app.ui.home.NumberBtn
+            android:id="@+id/btn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_calc"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp"
+            app:value="0" />
+
+
+        <RelativeLayout
+            android:background="@drawable/button_calc"
+            android:layout_width="100dp"
+            android:layout_height="70dp">
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/btn_delete"-->
+            <!--                    android:layout_width="50dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:src="@drawable/delete_char"-->
+            <!--                    android:tint="@color/white"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_centerVertical="true"/>-->
+            <!--            </RelativeLayout>-->
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/delete_char"
+                    app:tint="@color/red" />
+
+            </com.andexert.library.RippleView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
