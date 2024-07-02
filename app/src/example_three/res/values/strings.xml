@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">New Example App</string>
+    <string name="auth">Authentication</string>
+    <string name="password">Password</string>
+    <string name="hint_password">Your password</string>
+    <string name="login">Login</string>
+    <string name="hint_login">Your login</string>
+    <string name="log_in_btn">Log in</string>
+    <string name="show_pass">Show password</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+</resources>
