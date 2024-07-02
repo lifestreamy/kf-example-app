@@ -29,6 +29,7 @@ class ExampleSDK(context: Context) : ISDK {
 
     override suspend fun example(
         e1: BigDecimal,
+        e2: String,
         sdkExampleListener: SDKExampleListener,
         e3: Boolean
     ) {
@@ -36,7 +37,7 @@ class ExampleSDK(context: Context) : ISDK {
     }
 
     override fun isAuthorized(): Boolean {
-        return false
+        return true
     }
 
     override fun onDestroy() {
