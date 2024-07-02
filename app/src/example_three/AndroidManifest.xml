@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        tools:replace="android:name"
+        android:name="com.example.app.NewApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <uses-library
+            android:name="com.odm"
+            android:required="false"/>
+
+        <activity
+            android:name="com.example.app.NewActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receivers.ScreenStateReceiver" />
+
+        <meta-data android:name="io.sentry.auto-init" android:value="false" />
+    </application>
+
+</manifest>
