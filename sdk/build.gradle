@@ -4,7 +4,7 @@ apply plugin: 'org.jetbrains.dokka'
 apply plugin: 'com.google.devtools.ksp'
 
 android {
-    
+
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 34
@@ -31,6 +31,9 @@ android {
             dimension "app"
         }
         example_two {
+            dimension "app"
+        }
+        example_three {
             dimension "app"
         }
     }
